@@ -5,7 +5,7 @@ export default function Experience() {
         <div className="mt-12">
       
         <div className="mx-auto max-w-2xl text-center">
-          <p className="text-6xl sm:text-5xl lg:text-6xlfont-semibold tracking-wide text-amber-600 dark:text-amber-400">
+          <p className="text-4xl sm:text-5xl lg:text-6xlfont-semibold tracking-wide text-amber-600 dark:text-amber-400">
               Experience
           </p>
 
@@ -58,14 +58,14 @@ export default function Experience() {
               <li className="flex gap-x-3">
                 <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-amber-600 dark:bg-amber-400" />
                 <span>
-                  Worked on backend and media-processing pipelines using FFmpeg, multithreading, and adaptive model selection, improving inference speed by up to 2×.
+                  Worked on backend and media-processing pipelines using FFmpeg, multithreading, and adaptive model selection, <strong>improving inference speed by up to 2×.</strong>
                 </span>
               </li>
 
               <li className="flex gap-x-3">
                 <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-amber-600 dark:bg-amber-400" />
                 <span>
-                  Integrated LLM, speech-to-text, and Google Calendar APIs into application workflows, using caching and lifecycle-aware synchronization to reduce redundant Calendar API calls by 67%.
+                  Integrated LLM, speech-to-text, and Google Calendar APIs into application workflows, using caching and lifecycle-aware synchronization to reduce redundant Calendar API calls by <strong>67%.</strong>
                 </span>
               </li>
             </ul>
