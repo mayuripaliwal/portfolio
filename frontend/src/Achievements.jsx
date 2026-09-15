@@ -8,7 +8,7 @@ export default function Achievements() {
     <div className="bg-white py-24 sm:py-32 dark:bg-gray-900">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-2xl text-center">
-          <p className="mb-22 text-6xl font-semibold tracking-wide text-amber-600 dark:text-amber-400">
+          <p className="mb-22 text-4xl font-semibold tracking-wide text-amber-600 sm:text-5xl lg:text-6xl dark:text-amber-400">
               Achievements
           </p>
         </div>
