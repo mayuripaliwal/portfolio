@@ -18,6 +18,7 @@ function App() {
       <Skills></Skills>
       <Achievements></Achievements>
       <Footer></Footer>
+      <Analytics></Analytics>
     </div>
   )
 }
