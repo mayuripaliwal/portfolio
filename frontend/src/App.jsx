@@ -6,6 +6,7 @@ import Experience from './Experience.jsx';
 import Skills from './Skills.jsx';
 import Achievements from './Achievements.jsx';
 import Footer from './Footer.jsx';
+import { Analytics } from "@vercel/analytics/next"
 function App() {
 
   return (
