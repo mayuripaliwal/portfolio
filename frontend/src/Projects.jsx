@@ -1,10 +1,5 @@
 import {
-  AcademicCapIcon,
-  BanknotesIcon,
-  CheckBadgeIcon,
   LinkIcon,
-  ReceiptRefundIcon,
-  UsersIcon,
 } from '@heroicons/react/24/outline'
 
 const actions = [
@@ -14,6 +9,7 @@ const actions = [
     technologies:'React, FastAPI, PostgreSQL, Redis, ARQ',
     href: 'https://gettrimly.vercel.app',
     icon: LinkIcon,
+    apiDocs: 'https://url-shortener-f3u2.onrender.com/docs',
     iconForeground: 'text-teal-700 dark:text-teal-400',
     iconBackground: 'bg-teal-50 dark:bg-teal-500/10',
     demo:'https://gettrimly.vercel.app',
@@ -73,7 +69,7 @@ export default function Projects() {
             </p>
           </div>
           {/* Links */}
-          <div className="mt-8 flex items-center gap-x-6">
+          <div className="mt-8 flex flex-wrap items-center gap-3">
             <a
               href={action.demo}
               target="_blank"
@@ -90,6 +86,15 @@ export default function Projects() {
               className="rounded-md bg-amber-600 px-4 py-2.5 text-sm font-semibold text-gray-900 transition hover:bg-amber-500  dark:bg-amber-400 dark:transition dark:hover:bg-amber-300"
             >
               GitHub <span aria-hidden="true">↗</span>
+            </a>
+            {/* API docs */}
+            <a
+              href={action.apiDocs}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="rounded-md bg-amber-600 px-4 py-2.5 text-sm font-semibold text-gray-900 transition hover:bg-amber-500  dark:bg-amber-400 dark:transition dark:hover:bg-amber-300"
+            >
+              API Docs ↗
             </a>
           </div>
         </div>
