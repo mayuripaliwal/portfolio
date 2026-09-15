@@ -5,7 +5,7 @@ export default function Experience() {
         <div className="mt-12">
       
         <div className="mx-auto max-w-2xl text-center">
-          <p className="text-6xl font-semibold tracking-wide text-amber-600 dark:text-amber-400">
+          <p className="text-6xl sm:text-5xl lg:text-6xlfont-semibold tracking-wide text-amber-600 dark:text-amber-400">
               Experience
           </p>
 
@@ -36,14 +36,14 @@ export default function Experience() {
             </div>
 
             {/* Description */}
-            <p className="mt-6 text-xl leading-7 text-gray-600 dark:text-gray-300">
+            <p className="mt-6 text-base leading-7 text-gray-600 sm:text-xl dark:text-gray-300">
               Built Android and desktop applications integrating speech-to-text
               and LLM frameworks, while working across frontend, backend, APIs,
               and media-processing pipelines.
             </p>
 
             {/* Highlights */}
-            <ul className="mt-6 space-y-4 text-xl leading-7 text-gray-600 dark:text-gray-300">
+            <ul className="mt-6 space-y-4 text-base leading-7 text-gray-600 sm:text-xl dark:text-gray-300">
               <li className="flex gap-x-3">
                 <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-amber-600 dark:bg-amber-400" />
                 <span>

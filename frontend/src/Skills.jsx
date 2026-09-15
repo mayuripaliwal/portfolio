@@ -32,7 +32,7 @@ export default function Skills() {
 
         {/* Section heading */}
         <div className="mx-auto max-w-2xl lg:mx-0">
-          <p className="text-6xl font-semibold tracking-wide text-amber-600 dark:text-amber-400">
+          <p className="text-4xl font-semibold tracking-wide text-amber-600 sm:text-5xl lg:text-6xl dark:text-amber-400">
             Skills
           </p>
 

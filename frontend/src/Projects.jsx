@@ -32,7 +32,7 @@ export default function Projects() {
           
           {/* Section heading */}
           <div className="mx-auto max-w-2xl text-center">
-            <p className="text-6xl font-semibold tracking-wide text-amber-600 dark:text-amber-400">
+            <p className="text-4xl font-semibold tracking-wide text-amber-600 sm:text-5xl lg:text-6xl dark:text-amber-400">
               Projects
             </p>
 
@@ -61,11 +61,11 @@ export default function Projects() {
             </span>
           </div>
           <div className="mt-8">
-            <h3 className="text-4xl font-semibold text-gray-900 dark:text-white">
+            <h3 className="text-2xl font-semibold text-gray-900 sm:text-3xl dark:text-white">
                 {/* Extend touch target to entire panel */}
                 {action.title}
             </h3>
-            <p className="mt-2 text-2xl text-gray-500 dark:text-gray-400">
+            <p className="mt-2 text-base leading-7 text-gray-500 sm:text-2xl dark:text-gray-400">
               {action.description}
             </p>
             <p className="mt-4 text-sm font-medium text-gray-900 dark:text-gray-200">
