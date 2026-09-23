@@ -1,28 +1,34 @@
 const skillGroups = [
   {
     title: "Languages",
-    skills: ["C++", "Python", "JavaScript", "Dart"],
+    skills: ["Python", "C++","JavaScript"],
   },
   {
     title: "Backend & Web",
-    skills: ["FastAPI", "React", "Flutter", "REST APIs"],
+    skills: ["FastAPI", "React", "REST APIs" ],
   },
   {
     title: "Databases & Infrastructure",
-    skills: ["PostgreSQL", "Redis", "MySQL", "SQLite", "Firebase"],
+    skills: ["PostgreSQL", "Redis", "Docker","SQLite"],
   },
   {
-    title: "CS & Tools",
+    title: "Tools",
+    skills: [
+      "Git",
+      "GitHub Actions",
+      "CI/CD",
+      "pytest"
+    ],
+  },
+  {
+    title: "CS Fundamentals",
     skills: [
       "Data Structures & Algorithms",
       "OOP",
       "DBMS",
       "Operating Systems",
-      "Git",
-      "GitHub Actions",
-      "CI/CD",
     ],
-  },
+  }
 ]
 
 export default function Skills() {
