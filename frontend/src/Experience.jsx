@@ -5,7 +5,7 @@ export default function Experience() {
         <div className="mt-12">
       
         <div className="mx-auto max-w-2xl text-center">
-          <p className="text-4xl sm:text-5xl lg:text-6xlfont-semibold tracking-wide text-amber-600 dark:text-amber-400">
+          <p className="text-4xl sm:text-5xl lg:text-6xl font-semibold tracking-wide text-amber-600 dark:text-amber-400">
               Experience
           </p>
 
@@ -47,6 +47,12 @@ export default function Experience() {
               <li className="flex gap-x-3">
                 <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-amber-600 dark:bg-amber-400" />
                 <span>
+                  Developed a native Windows audio capture module using <strong>C++ and WASAPI</strong>, handling microphone and system-audio loopback capture, PCM format conversion, buffering, and multi-threaded audio processing.
+                </span>
+              </li>
+              <li className="flex gap-x-3">
+                <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-amber-600 dark:bg-amber-400" />
+                <span>
                   Built Android and desktop applications with Flutter, adding features powered by open-source speech-to-text and LLM frameworks.
                 </span>
               </li>
@@ -73,6 +79,7 @@ export default function Experience() {
             {/* Technologies */}
             <div className="mt-8 flex flex-wrap gap-2">
               {[
+                "C++",
                 "Flutter",
                 "Python",
                 "FFmpeg",
