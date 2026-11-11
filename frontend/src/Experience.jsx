@@ -81,7 +81,6 @@ export default function Experience() {
               {[
                 "C++",
                 "Flutter",
-                "Python",
                 "FFmpeg",
                 "REST APIs",
                 "Firebase",

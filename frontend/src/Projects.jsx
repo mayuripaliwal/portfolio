@@ -1,12 +1,12 @@
 import {
-  LinkIcon,
+  LinkIcon,ChatBubbleLeftRightIcon
 } from '@heroicons/react/24/outline'
 
-const actions = [
+const projects = [
   {
     title: 'trimly',
     description:'A full-stack URL shortening service with authentication, Redis caching, asynchronous analytics, and rate limiting.',
-    technologies:'React, FastAPI, PostgreSQL, Redis, ARQ',
+    technologies:'Python, FastAPI, React, PostgreSQL, Redis, ARQ',
     href: 'https://gettrimly.vercel.app',
     icon: LinkIcon,
     apiDocs: 'https://url-shortener-yrnx.onrender.com/docs',
@@ -15,6 +15,18 @@ const actions = [
     demo:'https://gettrimly.vercel.app',
     github:'https://github.com/mayuripaliwal/url-shortener',
   },
+  {
+    title: 'AuthorConnect',
+    description:'An AI-powered author support portal for ticket management, automated categorization, and response suggestions.',
+    technologies:'Python, FastAPI, React, PostgreSQL, SQLAlchemy, Alembic, Groq API',
+    href: 'https://author-support-and-communication-portal-1.onrender.com/login',
+    icon: ChatBubbleLeftRightIcon,
+    apiDocs: 'https://author-support-and-communication-portal.onrender.com/docs',
+    iconForeground: 'text-teal-700 dark:text-teal-400',
+    iconBackground: 'bg-teal-50 dark:bg-teal-500/10',
+    demo:'https://author-support-and-communication-portal-1.onrender.com/login',
+    github:'https://github.com/mayuripaliwal/author-support-and-communication-portal',
+  }
 ]
 
 function classNames(...classes) {
@@ -39,39 +51,33 @@ export default function Projects() {
 
           {/* Project card */}
           <div className="mt-12"></div>
-    <div className="divide-y divide-gray-200 overflow-hidden rounded-lg bg-gray-200 shadow-sm sm:grid sm:divide-y-0 dark:divide-white/10 dark:bg-gray-900 dark:shadow-none dark:outline dark:-outline-offset-1 dark:outline-white/20">
-      {actions.map((action, actionIdx) => (
+    <div className="grid divide-y divide-gray-200 gap-4 overflow-hidden rounded-lg bg-gray-200 shadow-sm sm:grid sm:divide-y-0 dark:divide-white/10 dark:bg-gray-900 dark:shadow-none">
+      {projects.map((project, actionIdx) => (
         <div
-          key={action.title}
-          className={classNames(
-            actionIdx === 0 ? 'rounded-tl-lg rounded-tr-lg sm:rounded-tr-none' : '',
-            actionIdx === 1 ? 'sm:rounded-tr-lg' : '',
-            actionIdx === actions.length - 2 ? 'sm:rounded-bl-lg' : '',
-            actionIdx === actions.length - 1 ? 'rounded-br-lg rounded-bl-lg sm:rounded-bl-none' : '',
-            'group relative border-gray-200 bg-white p-6 focus-within:outline-2 focus-within:-outline-offset-2 focus-within:outline-amber-600 sm:odd:not-nth-last-2:border-b sm:even:border-l sm:even:not-last:border-b dark:border-white/10 dark:bg-gray-800/50 dark:focus-within:outline-amber-500',
-          )}
+          key={project.title}
+          className="group relative rounded-lg border border-gray-200 bg-white p-6 shadow-sm focus-within:outline-2 focus-within:-outline-offset-2 focus-within:outline-amber-600 dark:border-white/10 dark:bg-gray-800/50 dark:focus-within:outline-amber-500"
         >
           <div>
-            <span className={classNames(action.iconBackground, action.iconForeground, 'inline-flex rounded-lg p-3')}>
-              <action.icon aria-hidden="true" className="size-6" />
+            <span className={classNames(project.iconBackground, project.iconForeground, 'inline-flex rounded-lg p-3')}>
+              <project.icon aria-hidden="true" className="size-6" />
             </span>
           </div>
           <div className="mt-8">
             <h3 className="text-2xl font-semibold text-gray-900 sm:text-3xl dark:text-white">
                 {/* Extend touch target to entire panel */}
-                {action.title}
+                {project.title}
             </h3>
             <p className="mt-2 text-base leading-7 text-gray-500 sm:text-2xl dark:text-gray-400">
-              {action.description}
+              {project.description}
             </p>
             <p className="mt-4 text-sm font-medium text-gray-900 dark:text-gray-200">
-              {action.technologies}
+              {project.technologies}
             </p>
           </div>
           {/* Links */}
           <div className="mt-8 flex flex-wrap items-center gap-3">
             <a
-              href={action.demo}
+              href={project.demo}
               target="_blank"
               rel="noopener noreferrer"
               className="rounded-md bg-amber-600 px-4 py-2.5 text-sm font-semibold text-gray-900 transition hover:bg-amber-500  dark:bg-amber-400 dark:transition dark:hover:bg-amber-300"
@@ -80,7 +86,7 @@ export default function Projects() {
             </a>
 
             <a
-              href={action.github}
+              href={project.github}
               target="_blank"
               rel="noopener noreferrer"
               className="rounded-md bg-amber-600 px-4 py-2.5 text-sm font-semibold text-gray-900 transition hover:bg-amber-500  dark:bg-amber-400 dark:transition dark:hover:bg-amber-300"
@@ -89,7 +95,7 @@ export default function Projects() {
             </a>
             {/* API docs */}
             <a
-              href={action.apiDocs}
+              href={project.apiDocs}
               target="_blank"
               rel="noopener noreferrer"
               className="rounded-md bg-amber-600 px-4 py-2.5 text-sm font-semibold text-gray-900 transition hover:bg-amber-500  dark:bg-amber-400 dark:transition dark:hover:bg-amber-300"
