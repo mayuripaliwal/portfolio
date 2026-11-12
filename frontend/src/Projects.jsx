@@ -9,7 +9,7 @@ const projects = [
     technologies:'Python, FastAPI, React, PostgreSQL, Redis, ARQ',
     href: 'https://gettrimly.vercel.app',
     icon: LinkIcon,
-    apiDocs: 'https://url-shortener-yrnx.onrender.com/docs',
+    apiDocs: 'https://url-shortener-f3u2.onrender.com/docs',
     iconForeground: 'text-teal-700 dark:text-teal-400',
     iconBackground: 'bg-teal-50 dark:bg-teal-500/10',
     demo:'https://gettrimly.vercel.app',
