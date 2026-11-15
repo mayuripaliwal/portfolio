@@ -14,7 +14,7 @@ export default function Experience() {
           </h2>
         </div>
         
-        <div className="mx-auto mt-12 w-full max-w-7xl">
+        <div className="mx-auto mt-12 w-full max-w-7xl px-6 sm:px-8">
             
           <div className="rounded-2xl border border-gray-200 bg-gray-50 p-8 dark:border-gray-800 dark:bg-gray-800/50 sm:p-10">
             

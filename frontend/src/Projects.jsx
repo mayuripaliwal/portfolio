@@ -1,10 +1,24 @@
 import {
-  LinkIcon,ChatBubbleLeftRightIcon
+  LinkIcon,ChatBubbleLeftRightIcon, DocumentMagnifyingGlassIcon
 } from '@heroicons/react/24/outline'
 
 const projects = [
   {
+    title: 'Query PDF',
+    tagline: 'Get answers grounded in citations from your PDFs.',
+    description: 'A full-stack document processing platform for uploading PDFs, performing semantic search, and generating AI-powered answers with source citations.',
+    technologies: 'Python, FastAPI, React, PostgreSQL, SQLAlchemy, Alembic, Redis, ARQ, Groq API',
+    icon: DocumentMagnifyingGlassIcon,
+    apiDocs: 'https://document-processing-platform-wwyn.onrender.com/docs',
+    iconForeground: 'text-teal-700 dark:text-teal-400',
+    iconBackground: 'bg-teal-50 dark:bg-teal-500/10',
+    demo:'https://querypdf.vercel.app',
+    github:'https://github.com/mayuripaliwal/document-processing-platform',
+  },
+
+  {
     title: 'trimly',
+    tagline: 'Keep track of all your shared links with click analytics',
     description:'A full-stack URL shortening service with authentication, Redis caching, asynchronous analytics, and rate limiting.',
     technologies:'Python, FastAPI, React, PostgreSQL, Redis, ARQ',
     href: 'https://gettrimly.vercel.app',
@@ -17,6 +31,7 @@ const projects = [
   },
   {
     title: 'AuthorConnect',
+    tagline: 'Handle author queries faster with AI ticket classification and prioritization.',
     description:'An AI-powered author support portal for ticket management, automated categorization, and response suggestions.',
     technologies:'Python, FastAPI, React, PostgreSQL, SQLAlchemy, Alembic, Groq API',
     href: 'https://author-support-and-communication-portal-1.onrender.com/login',
@@ -51,11 +66,16 @@ export default function Projects() {
 
           {/* Project card */}
           <div className="mt-12"></div>
-    <div className="grid divide-y divide-gray-200 gap-4 overflow-hidden rounded-lg bg-gray-200 shadow-sm sm:grid sm:divide-y-0 dark:divide-white/10 dark:bg-gray-900 dark:shadow-none">
+    <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 divide-y divide-gray-200 rounded-lg shadow-none sm:divide-y-0 dark:divide-white/10 dark:bg-gray-900 dark:shadow-none">
       {projects.map((project, actionIdx) => (
         <div
           key={project.title}
-          className="group relative rounded-lg border border-gray-200 bg-white p-6 shadow-sm focus-within:outline-2 focus-within:-outline-offset-2 focus-within:outline-amber-600 dark:border-white/10 dark:bg-gray-800/50 dark:focus-within:outline-amber-500"
+          className="flex flex-col group relative rounded-lg border border-gray-200 
+          bg-white p-6 shadow-sm focus-within:outline-2 focus-within:-outline-offset-2
+           focus-within:outline-amber-600 dark:border-white/10 dark:bg-gray-800/50 
+           dark:focus-within:outline-amber-500 transition-all duration-300 ease-out
+           hover:-translate-y-2 hover:shadow-xl dark:hover:border-amber-400 hover:border-amber-600
+           "
         >
           <div>
             <span className={classNames(project.iconBackground, project.iconForeground, 'inline-flex rounded-lg p-3')}>
@@ -63,11 +83,14 @@ export default function Projects() {
             </span>
           </div>
           <div className="mt-8">
-            <h3 className="text-2xl font-semibold text-gray-900 sm:text-3xl dark:text-white">
+            <h3 className="text-2xl font-semibold text-gray-900 sm:text-3xl dark:text-gray-100">
                 {/* Extend touch target to entire panel */}
                 {project.title}
             </h3>
-            <p className="mt-2 text-base leading-7 text-gray-500 sm:text-2xl dark:text-gray-400">
+            <p className="mt-2 text-2xl leading-7 text-gray-700 sm:text-2xl dark:text-gray-200">
+              {project.tagline}
+            </p>
+            <p className="mt-6 text-base leading-7 text-gray-500 sm:text-base dark:text-gray-400">
               {project.description}
             </p>
             <p className="mt-4 text-sm font-medium text-gray-900 dark:text-gray-200">
@@ -75,7 +98,7 @@ export default function Projects() {
             </p>
           </div>
           {/* Links */}
-          <div className="mt-8 flex flex-wrap items-center gap-3">
+          <div className="mt-auto h-full flex flex-wrap items-center gap-3 pt-8">
             <a
               href={project.demo}
               target="_blank"

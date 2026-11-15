@@ -1,7 +1,7 @@
 const skillGroups = [
   {
     title: "Languages",
-    skills: ["Python", "C++","JavaScript"],
+    skills: ["Python", "JavaScript", "C++"],
   },
   {
     title: "Backend & Web",
@@ -9,7 +9,7 @@ const skillGroups = [
   },
   {
     title: "Databases & Infrastructure",
-    skills: ["PostgreSQL", "Redis", "Docker","SQLite"],
+    skills: ["PostgreSQL", "SQLAlchemy","Alembic","Redis", "Docker"],
   },
   {
     title: "Tools",
