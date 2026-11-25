@@ -33,11 +33,6 @@ export default function Education() {
                     Bachelor of Technology in Electronics and Communication Engineering
                 </p>         
             </div>
-            <div>
-                <p className="font-semibold text-amber-600 dark:text-amber-400">
-                    CGPA: 7.8 / 10
-                </p>
-            </div>
         </div>
         </div>
       </div>
