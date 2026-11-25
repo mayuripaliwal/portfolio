@@ -1,39 +1,64 @@
 const skillGroups = [
   {
     title: "Languages",
-    skills: ["Python", "JavaScript", "C++"],
+    skills: ["Python", "C++", "JavaScript", "Dart"],
   },
   {
-    title: "Backend & Web",
-    skills: ["FastAPI", "React", "REST APIs" ],
-  },
-  {
-    title: "Databases & Infrastructure",
-    skills: ["PostgreSQL", "SQLAlchemy","Alembic","Redis", "Docker"],
-  },
-  {
-    title: "Tools",
+    title: "Backend Development",
     skills: [
+      "FastAPI",
+      "SQLAlchemy",
+      "Alembic",
+      "Arq",
+      "REST APIs",
+    ],
+  },
+  {
+    title: "Frontend Development",
+    skills: ["React.js", "Flutter", "HTML", "CSS"],
+  },
+  {
+    title: "Databases & Caching",
+    skills: [
+      "PostgreSQL",
+      "pgvector",
+      "Redis",
+    ],
+  },
+  {
+    title: "AI & Machine Learning",
+    skills: [
+      "RAG",
+      "LangChain",
+      "FastEmbed",
+      "whisper.cpp",
+      "Groq API",
+    ],
+  },
+  {
+    title: "Tools & Testing",
+    skills: [
+      "Docker",
       "Git",
       "GitHub Actions",
       "CI/CD",
-      "pytest"
+      "Pytest",
     ],
   },
   {
     title: "CS Fundamentals",
     skills: [
       "Data Structures & Algorithms",
-      "OOP",
+      "Object-Oriented Programming",
       "DBMS",
       "Operating Systems",
     ],
-  }
-]
+  },
+];
 
 export default function Skills() {
   return (
-    <section id="skills" className="bg-white py-24 dark:bg-gray-900 sm:py-32">
+    <section id="skills" className="bg-white py-12 dark:bg-gray-900 sm:py-16">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
 
         {/* Section heading */}

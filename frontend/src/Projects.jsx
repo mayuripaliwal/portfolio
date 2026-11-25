@@ -7,13 +7,15 @@ const projects = [
     title: 'Query PDF',
     tagline: 'Get answers grounded in citations from your PDFs.',
     description: 'A full-stack document processing platform for uploading PDFs, performing semantic search, and generating AI-powered answers with source citations.',
-    technologies: 'Python, FastAPI, React, PostgreSQL, SQLAlchemy, Alembic, Redis, ARQ, Groq API',
+    technologies: 'Python, FastAPI, React, PostgreSQL, pgvector, SQLAlchemy, Alembic, Redis, ARQ, Groq API',
     icon: DocumentMagnifyingGlassIcon,
     apiDocs: 'https://document-processing-platform-wwyn.onrender.com/docs',
     iconForeground: 'text-teal-700 dark:text-teal-400',
     iconBackground: 'bg-teal-50 dark:bg-teal-500/10',
     demo:'https://querypdf.vercel.app',
     github:'https://github.com/mayuripaliwal/document-processing-platform',
+    video:"https://youtu.be/6why4PlcjrM",
+    image: '/query-pdf.png'
   },
 
   {
@@ -27,7 +29,7 @@ const projects = [
     iconForeground: 'text-teal-700 dark:text-teal-400',
     iconBackground: 'bg-teal-50 dark:bg-teal-500/10',
     demo:'https://gettrimly.vercel.app',
-    github:'https://github.com/mayuripaliwal/url-shortener',
+    github:'https://github.com/mayuripaliwal/url-shortener'
   },
   {
     title: 'AuthorConnect',
@@ -40,7 +42,7 @@ const projects = [
     iconForeground: 'text-teal-700 dark:text-teal-400',
     iconBackground: 'bg-teal-50 dark:bg-teal-500/10',
     demo:'https://author-support-and-communication-portal-1.onrender.com/login',
-    github:'https://github.com/mayuripaliwal/author-support-and-communication-portal',
+    github:'https://github.com/mayuripaliwal/author-support-and-communication-portal'
   }
 ]
 
@@ -81,7 +83,7 @@ export default function Projects() {
             <span className={classNames(project.iconBackground, project.iconForeground, 'inline-flex rounded-lg p-3')}>
               <project.icon aria-hidden="true" className="size-6" />
             </span>
-          </div>
+          </div>          
           <div className="mt-8">
             <h3 className="text-2xl font-semibold text-gray-900 sm:text-3xl dark:text-gray-100">
                 {/* Extend touch target to entire panel */}
@@ -112,7 +114,7 @@ export default function Projects() {
               href={project.github}
               target="_blank"
               rel="noopener noreferrer"
-              className="rounded-md bg-amber-600 px-4 py-2.5 text-sm font-semibold text-gray-900 transition hover:bg-amber-500  dark:bg-amber-400 dark:transition dark:hover:bg-amber-300"
+              className="rounded-md border border-amber-600 px-4 py-2.5 text-sm font-semibold text-amber-700 transition hover:bg-amber-50 dark:border-amber-400 dark:text-amber-400 dark:hover:bg-amber-400/10"
             >
               GitHub <span aria-hidden="true">↗</span>
             </a>
@@ -121,10 +123,20 @@ export default function Projects() {
               href={project.apiDocs}
               target="_blank"
               rel="noopener noreferrer"
-              className="rounded-md bg-amber-600 px-4 py-2.5 text-sm font-semibold text-gray-900 transition hover:bg-amber-500  dark:bg-amber-400 dark:transition dark:hover:bg-amber-300"
+              className="rounded-md border border-amber-600 px-4 py-2.5 text-sm font-semibold text-amber-700 transition hover:bg-amber-50 dark:border-amber-400 dark:text-amber-400 dark:hover:bg-amber-400/10"
             >
-              API Docs ↗
-            </a>
+              API Docs <span aria-hidden="true">↗</span>
+            </a>  
+            {project.video && (
+              <a
+                href={project.video}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="rounded-md border border-amber-600 px-4 py-2.5 text-sm font-semibold text-amber-700 transition hover:bg-amber-50 dark:border-amber-400 dark:text-amber-400 dark:hover:bg-amber-400/10"
+              >
+                Demo Video <span aria-hidden="true">↗</span>
+              </a>
+            )}
           </div>
         </div>
       ))}

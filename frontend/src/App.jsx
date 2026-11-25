@@ -5,6 +5,7 @@ import Projects from './Projects.jsx';
 import Experience from './Experience.jsx';
 import Skills from './Skills.jsx';
 import Achievements from './Achievements.jsx';
+import Education from "./Education.jsx";
 import Footer from './Footer.jsx';
 import { Analytics } from "@vercel/analytics/react"
 function App() {
@@ -15,6 +16,7 @@ function App() {
       <Hero></Hero>
       <Projects></Projects>    
       <Experience></Experience>
+      <Education></Education>
       <Skills></Skills>
       <Achievements></Achievements>
       <Footer></Footer>

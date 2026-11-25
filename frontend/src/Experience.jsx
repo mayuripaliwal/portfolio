@@ -35,43 +35,26 @@ export default function Experience() {
               </p>
             </div>
 
-            {/* Description */}
-            <p className="mt-6 text-base leading-7 text-gray-600 sm:text-xl dark:text-gray-300">
-              Built Android and desktop applications integrating speech-to-text
-              and LLM frameworks, while working across frontend, backend, APIs,
-              and media-processing pipelines.
-            </p>
-
             {/* Highlights */}
             <ul className="mt-6 space-y-4 text-base leading-7 text-gray-600 sm:text-xl dark:text-gray-300">
               <li className="flex gap-x-3">
                 <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-amber-600 dark:bg-amber-400" />
                 <span>
-                  Developed a native Windows audio capture module using <strong>C++ and WASAPI</strong>, handling microphone and system-audio loopback capture, PCM format conversion, buffering, and multi-threaded audio processing.
+                  Developed a desktop meeting assistant that captures meeting audio and generates timestamped transcripts and AI-powered notes using whisper-large-v3-turbo and Groq APIs, incorporating custom templates and meeting context into LLM prompts.
                 </span>
               </li>
               <li className="flex gap-x-3">
                 <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-amber-600 dark:bg-amber-400" />
                 <span>
-                  Built Android and desktop applications with Flutter, adding features powered by open-source speech-to-text and LLM frameworks.
-                </span>
-              </li>
+                  Engineered native C++ audio recording using Windows WASAPI for microphone and system audio; integrated recording controls into Flutter through Dart FFI.
 
-              
-
-
-
-              <li className="flex gap-x-3">
-                <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-amber-600 dark:bg-amber-400" />
-                <span>
-                  Worked on backend and media-processing pipelines using FFmpeg, multithreading, and adaptive model selection, <strong>improving inference speed by up to 2×.</strong>
                 </span>
               </li>
 
               <li className="flex gap-x-3">
                 <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-amber-600 dark:bg-amber-400" />
                 <span>
-                  Integrated LLM, speech-to-text, and Google Calendar APIs into application workflows, using caching and lifecycle-aware synchronization to reduce redundant Calendar API calls by <strong>67%.</strong>
+                  Integrated whisper.cpp into a Flutter mobile application for offline, on-device speech-to-text transcription using ggml-tiny.en and ggml-medium-q5_0 models, reducing reliance on external transcription APIs and keeping audio processing local
                 </span>
               </li>
             </ul>
@@ -79,12 +62,13 @@ export default function Experience() {
             {/* Technologies */}
             <div className="mt-8 flex flex-wrap gap-2">
               {[
-                "C++",
-                "Flutter",
-                "FFmpeg",
-                "REST APIs",
-                "Firebase",
                 "LLMs",
+                "REST APIs",
+                "Flutter",
+                "C++",
+                "FFmpeg",
+                "whisper.cpp"               
+                
               ].map((tech) => (
                 <span
                   key={tech}

@@ -46,6 +46,12 @@ export default function Navbar() {
                 Experience
               </a>
               <a
+                href="#education"
+                className="inline-flex items-center border-b-2 border-transparent px-1 pt-1 text-xl font-medium text-gray-500 hover:border-gray-300 hover:text-gray-700 dark:text-gray-300 dark:hover:border-white/20 dark:hover:text-white"
+              >
+                Education
+              </a>
+              <a
                 href="#skills"
                 className="inline-flex items-center border-b-2 border-transparent px-1 pt-1 text-xl font-medium text-gray-500 hover:border-gray-300 hover:text-gray-700 dark:text-gray-300 dark:hover:border-white/20 dark:hover:text-white"
               >
@@ -56,8 +62,8 @@ export default function Navbar() {
           <div className="flex items-center">
             <div className="shrink-0">
               <a
-                href="/Mayuri_Paliwal_Resume.pdf"
-                download="Mayuri_Paliwal_Resume.pdf"
+                href="/Mayuri_Paliwal.pdf"
+                download="Mayuri_Paliwal.pdf"
                 className="relative inline-flex items-center gap-x-1.5 rounded-md bg-amber-600 px-3 py-2 text-sm font-semibold text-gray-900 shadow-xs transition hover:bg-amber-500 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-amber-600 dark:bg-amber-400 dark:shadow-none dark:hover:bg-amber-300 dark:focus-visible:outline-amber-300"
               >
                 
@@ -92,6 +98,13 @@ export default function Navbar() {
             className="block border-l-4 border-transparent py-2 pr-4 pl-3 text-base font-medium text-gray-500 hover:border-gray-300 hover:bg-gray-50 hover:text-gray-800 sm:pr-6 sm:pl-5 dark:text-gray-300 dark:hover:border-white/20 dark:hover:bg-white/5 dark:hover:text-white"
           >
             Experience
+          </DisclosureButton>
+          <DisclosureButton
+            as="a"
+            href="#education"
+            className="block border-l-4 border-transparent py-2 pr-4 pl-3 text-base font-medium text-gray-500 hover:border-gray-300 hover:bg-gray-50 hover:text-gray-800 sm:pr-6 sm:pl-5 dark:text-gray-300 dark:hover:border-white/20 dark:hover:bg-white/5 dark:hover:text-white"
+          >
+            Education
           </DisclosureButton>
           <DisclosureButton
             as="a"
