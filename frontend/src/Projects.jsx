@@ -41,8 +41,9 @@ const projects = [
     apiDocs: 'https://author-support-and-communication-portal.onrender.com/docs',
     iconForeground: 'text-teal-700 dark:text-teal-400',
     iconBackground: 'bg-teal-50 dark:bg-teal-500/10',
-    demo:'https://author-support-and-communication-portal-1.onrender.com/login',
-    github:'https://github.com/mayuripaliwal/author-support-and-communication-portal'
+    demo:'https://author-support-and-communication-portal-1.onrender.com',
+    github:'https://github.com/mayuripaliwal/author-support-and-communication-portal',
+    video:"https://youtu.be/mABiK-j98TI",
   }
 ]
 
